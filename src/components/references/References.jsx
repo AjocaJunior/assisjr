@@ -23,17 +23,17 @@ const data = [
   {
     avatar: AVATAR2,
     name: "Edson Manhique",
-    review: "Fundador e Presidente da MozSistemas",
+    review: "Presidente da Enpersol Africa e Dre Consultores",
   },
   {
     avatar: AVATAR3,
     name: "Nélio Macombo",
-    review: "Fundador e Presidente da MozSistemas",
+    review: "Presidente da MozDevz e Engenheiro na Vodacom",
   },
   {
     avatar: AVATAR4,
     name: "Cassamo Nuvunga",
-    review: "Fundador e Presidente da MozSistemas",
+    review: "Presidente da CADE",
   },
 ];
 

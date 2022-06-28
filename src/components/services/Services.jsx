@@ -14,23 +14,23 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>CMS Site</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Loja Online</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Design Gráfico</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Alojamento e Domínio</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Redes Sociais</p>
             </li>
           </ul>
         </article>
@@ -42,51 +42,47 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Construição de API</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Gestão de Base de dados</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Serviços na Nuvem</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Métodos de Pagamento</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Mecanismos de busca</p>
             </li>
           </ul>
         </article>
         {/* FIM DO BACKEND DEVELOPMENT */}
         <article className="service">
           <div className="service__head">
-            <h3>Desenvolvimento Android</h3>
+            <h3>Desenvolvimento Mobile</h3>
           </div>
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Aplicativos Hibridos</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Desenho de UX/UI</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Armanezamento e Notificações</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Serviço...</p>
+              <p>Publicar na Apple ou Google Play Store</p>
             </li>
           </ul>
         </article>

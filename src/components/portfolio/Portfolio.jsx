@@ -11,44 +11,44 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Titulo 1",
-    github: "https://github.com",
-    demo: "demo live",
+    title: "SIGEHE - UniTiva",
+    github: "https://github.com/AjocaJunior/sigeheapp",
+    demo: "https://sigeheapp.herokuapp.com",
   },
   {
     id: 2,
     image: IMG2,
-    title: "Titulo 2",
-    github: "https://github.com",
-    demo: "demo live",
+    title: "Educa WebApp",
+    github: "https://github.com/AjocaJunior/educa-webpage",
+    demo: "https://educa.co.mz",
   },
   {
     id: 3,
     image: IMG3,
-    title: "Titulo 3",
-    github: "https://github.com",
-    demo: "demo live",
+    title: "One Media Site",
+    github: "https://github.com/AjocaJunior/Onemedia-website",
+    demo: "https://onemedia.herokuapp.com",
   },
   {
     id: 4,
     image: IMG4,
-    title: "Titulo 4",
-    github: "https://github.com",
-    demo: "demo live",
+    title: "App de Actividades",
+    github: "https://github.com/AjocaJunior/quasar-todo",
+    demo: "https://assisjrqr.netlify.app",
   },
   {
     id: 5,
     image: IMG5,
-    title: "Titulo 5",
-    github: "https://github.com",
-    demo: "demo live",
+    title: "Siversa ERP",
+    github: "https://github.com/AjocaJunior",
+    demo: "https://siversaerp.com",
   },
   {
     id: 6,
     image: IMG6,
-    title: "Titulo 6",
-    github: "https://github.com",
-    demo: "demo live",
+    title: "Outros Projectos",
+    github: "https://github.com/AjocaJunior",
+    demo: "https://drive.google.com/drive/folders/1PnzyKL7VLQqVtg3G68t3ugv8C_9g-EMf?usp=sharing",
   },
 ];
 
@@ -58,28 +58,28 @@ const Portfolio = () => {
       <h5>Meus trabalhos</h5>
       <h2>Portfólio</h2>
       <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {return(
-          <article key={id} className="portfolio__item">
-            <div className="portfolio__item-image">
-              <img src={image} alt={title} />
-            </div>
-            <h3>{title}</h3>
-            <div className="portfolio__item-cta">
-              <a href={github} className="btn">
-                Github
-              </a>
-              <a
-                href={demo}
-                className="btn btn-primary"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
-          </article>
-        )
-          ;
+        {data.map(({ id, image, title, github, demo }) => {
+          return (
+            <article key={id} className="portfolio__item">
+              <div className="portfolio__item-image">
+                <img src={image} alt={title} />
+              </div>
+              <h3>{title}</h3>
+              <div className="portfolio__item-cta">
+                <a href={github} className="btn">
+                  Github
+                </a>
+                <a
+                  href={demo}
+                  className="btn btn-primary"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+          );
         })}
       </div>
     </section>
