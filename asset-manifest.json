@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.da150c9c.css",
-    "main.js": "/static/js/main.6c4504d7.js",
+    "main.js": "/static/js/main.16558448.js",
     "static/media/assisnerd.gif": "/static/media/assisnerd.4d0ce94a133ff8537b55.gif",
     "static/media/assisfoto.png": "/static/media/assisfoto.0ed694b8c94b7e806a77.png",
     "static/media/portfolio5.png": "/static/media/portfolio5.a82ae9a163c1ac5e3a07.png",
@@ -13,10 +13,10 @@
     "static/media/portfolio4.jpg": "/static/media/portfolio4.6bf60cbb8fe5f7d7af5d.jpg",
     "index.html": "/index.html",
     "main.da150c9c.css.map": "/static/css/main.da150c9c.css.map",
-    "main.6c4504d7.js.map": "/static/js/main.6c4504d7.js.map"
+    "main.16558448.js.map": "/static/js/main.16558448.js.map"
   },
   "entrypoints": [
     "static/css/main.da150c9c.css",
-    "static/js/main.6c4504d7.js"
+    "static/js/main.16558448.js"
   ]
 }
