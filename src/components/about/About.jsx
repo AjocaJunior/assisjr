@@ -1,14 +1,18 @@
 import React from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
 import "./about.css";
 import ME from "../../assets/assisnerd.gif";
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 import { FiUsers } from "react-icons/fi";
+
 const About = () => {
+  const { translations } = useLanguage();
+
   return (
     <section id="about">
-      <h5>Saiba um pouco</h5>
-      <h2>SOBRE MIM</h2>
+      <h5>{translations.aboutTitle}</h5>
+      <h2>{translations.aboutSubtitle}</h2>
 
       <div className="container about__container">
         <div className="about__me">
@@ -20,29 +24,25 @@ const About = () => {
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
-              <h5>Experiência</h5>
-              <small>+ de 3 Anos de Experiência</small>
+              <h5>{translations.aboutExperience}</h5>
+              <small>{translations.aboutExperienceDesc}</small>
             </article>
             <article className="about__card">
               <FiUsers className="about__icon" />
-              <h5>Clientes</h5>
-              <small>+ de 10 Clientes Satisfeitos</small>
+              <h5>{translations.aboutSystems}</h5>
+              <small>{translations.aboutSystemsDesc}</small>
             </article>
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
-              <h5>Projectos</h5>
-              <small>+ de 5 Projectos Publicados</small>
+              <h5>{translations.aboutProjects}</h5>
+              <small>{translations.aboutProjectsDesc}</small>
             </article>
           </div>
           <p>
-            Assis Júnior, é um jovem licenciado em Informática de Gestão, pela
-            Universidade Wutive, que profissionalizou-se no desenvolvimento de
-            aplicativos web e android, com experiência em integração de métodos
-            de pagamento como PayPal, Cartão Pré-Pago e MPesa, hospedagem de web
-            apps, and more.
+            {translations.aboutDescription}
           </p>
           <a href="#contact" className="btn btn-primary">
-            Saber Mais
+            {translations.aboutBtn}
           </a>
         </div>
       </div>

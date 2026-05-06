@@ -1,6 +1,10 @@
 import React from "react";
+import { ThemeProvider } from "./contexts/ThemeContext";
+import { LanguageProvider } from "./contexts/LanguageContext";
 import Nav from "./components/nav/Nav";
 import Header from "./components/header/Header";
+import ThemeToggle from "./components/header/ThemeToggle";
+import LanguageToggle from "./components/header/LanguageToggle";
 import About from "./components/about/About";
 import Experience from "./components/experience/Experience";
 import Portfolio from "./components/portfolio/Portfolio";
@@ -11,17 +15,21 @@ import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
-    <>
-      <Header />
-      <Nav />
-      <About />
-      <Experience />
-      <Services />
-      <Portfolio />
-      <References />
-      <Contact />
-      <Footer />
-    </>
+    <ThemeProvider>
+      <LanguageProvider>
+        <ThemeToggle />
+        <LanguageToggle />
+        <Header />
+        <Nav />
+        <About />
+        <Experience />
+        <Services />
+        <Portfolio />
+        <References />
+        <Contact />
+        <Footer />
+      </LanguageProvider>
+    </ThemeProvider>
   );
 };
 

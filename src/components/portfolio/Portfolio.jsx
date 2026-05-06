@@ -1,4 +1,5 @@
 import React from "react";
+import { useLanguage } from "../../contexts/LanguageContext";
 import "./portfolio.css";
 import IMG1 from "../../assets/portfolio1.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
@@ -53,10 +54,12 @@ const data = [
 ];
 
 const Portfolio = () => {
+  const { translations } = useLanguage();
+
   return (
     <section id="portfolio">
-      <h5>Meus trabalhos</h5>
-      <h2>Portfólio</h2>
+      <h5>{translations.portfolioTitle}</h5>
+      <h2>{translations.portfolioSubtitle}</h2>
       <div className="container portfolio__container">
         {data.map(({ id, image, title, github, demo }) => {
           return (
@@ -67,7 +70,7 @@ const Portfolio = () => {
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
                 <a href={github} className="btn">
-                  Github
+                  {translations.github}
                 </a>
                 <a
                   href={demo}
@@ -75,7 +78,7 @@ const Portfolio = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Live Demo
+                  {translations.liveDemo}
                 </a>
               </div>
             </article>
